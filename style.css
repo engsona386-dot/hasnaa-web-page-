@@ -1,12 +1,18 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* 1. General Styles */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #555; 
     line-height: 1.6; 
+    background-color: #fff;
 }
 
-/* Navigation Styles */
+/* 2. Navigation & Header */
 .main-header { 
     display: flex; 
     justify-content: space-between; 
@@ -14,9 +20,21 @@ body {
     padding: 20px 10%; 
     background: #fff; 
 }
-.logo { font-size: 24px; font-weight: bold; color: #333; }
-.dot { color: #76c7c0; }
-.navigation ul { display: flex; list-style: none; gap: 25px; }
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.logo .dot { color: #76c7c0; }
+
+.navigation ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 25px; 
+}
+
 .navigation a { 
     text-decoration: none; 
     color: #888; 
@@ -25,7 +43,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Background Image Adjustment */
+/* 3. Hero Section (Mountain Image) */
 .hero {
     height: 500px;
     background-image: url('mountain.jpg');
@@ -35,16 +53,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-/* Icon Section Styles */
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #444;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #76c7c0;
+}
+
+/* 4. Features Section (Icons) */
 .features { 
     display: flex; 
     justify-content: space-around; 
     padding: 80px 10%; 
     text-align: center; 
 }
+
 .feature-item { flex: 1; padding: 0 20px; }
+
 .icon-circle { 
     width: 60px; height: 60px; 
     border: 1px solid #eee; 
@@ -54,17 +101,23 @@ body {
     font-size: 20px;
     color: #444;
 }
-.feature-item h3 { font-size: 14px; margin-bottom: 10px; color: #333; font-weight: bold; }
+
+.feature-item h3 { font-size: 14px; margin-bottom: 10px; color: #333; }
 .feature-item p { font-size: 12px; color: #999; }
 
 .separator { border: 0; border-top: 1px solid #f0f0f0; margin: 0 10%; }
 
-/* Content Section Styles */
+/* 5. Featured Content (Ocean Image) */
 .featured-section { text-align: center; padding: 60px 10%; }
+
 .featured-section h2 { font-size: 20px; margin-bottom: 15px; color: #333; }
+
 .subtitle { max-width: 800px; margin: 0 auto 40px; color: #999; font-size: 13px; }
+
 .image-container { position: relative; max-width: 900px; margin: 0 auto; }
+
 .image-container img { width: 100%; border-radius: 4px; }
+
 .play-button {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -74,19 +127,7 @@ body {
     border: 2px solid white; color: white;
 }
 
-/* Footer Customization */
-.main-footer { text-align: center; padding: 80px 10%; }
-.main-footer h3 { font-size: 20px; margin-bottom: 15px; color: #333; }
-.btn-outline { 
-    border: 2px solid #76c7c0; color: #76c7c0; 
-    background: transparent; padding: 10px 30px; margin-top: 20px;
-    cursor: pointer; font-weight: bold;
-}
-.footer-bottom { 
-    margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; 
-    display: flex; justify-content: space-between; font-size: 10px; color: #ccc; 
-}
-.footer-links a { text-decoration: none; color: #ccc; margin-left: 15px; }
+/* 6. Secondary Content (The two boxes you added) */
 .secondary-container { 
     display: flex; 
     padding: 40px 10%; 
@@ -116,8 +157,26 @@ body {
     border: 1px solid #76c7c0; 
     color: #76c7c0; 
     text-decoration: none; 
+    display: inline-block;
 }
 
 .img-box { flex: 1; }
 .img-box img { width: 100%; height: 100%; object-fit: cover; }
- 
+
+/* 7. Footer Styles */
+.main-footer { text-align: center; padding: 80px 10%; }
+
+.main-footer h3 { font-size: 20px; margin-bottom: 15px; color: #333; }
+
+.btn-outline { 
+    border: 2px solid #76c7c0; color: #76c7c0; 
+    background: transparent; padding: 10px 30px; margin-top: 20px;
+    cursor: pointer; font-weight: bold;
+}
+
+.footer-bottom { 
+    margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; 
+    display: flex; justify-content: space-between; font-size: 10px; color: #ccc; 
+}
+
+.footer-links a { text-decoration: none; color: #ccc; margin-left: 15px; }
